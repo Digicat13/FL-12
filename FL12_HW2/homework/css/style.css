@@ -1,5 +1,95 @@
-/*
+.tm-nav-item:hover {
+    background-color: lightskyblue;
+}
 
-write your code here
+.tm-nav-item-link:hover {
+    color: #fff;
 
-*/
+}
+
+.tm-banner {
+background: linear-gradient(to right, lightskyblue, burlywood)
+}
+
+.tm-banner-inner {
+background-color: white;
+}
+
+.tm-banner-text {
+text-shadow: 4px 4px 3px #333;
+}
+
+.flex-2-col{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.tm-team-description-container {
+
+}
+
+.tm-section-description {
+text-align: left;
+text-indent: 20px;
+}
+
+.box-bg:hover{
+    font-style: italic; 
+    background-color: lightgray;
+    color: lightskyblue;
+}
+
+.heading {
+
+}
+
+div.padding-medium h2{
+    text-align: center;
+    color: lightskyblue;
+}
+
+.padding-medium ol {
+list-style-type:lower-alpha;
+}
+
+.padding-medium li a:hover::before {
+    content: '>';
+}
+
+.padding-medium li a.text::after {
+    vertical-align:super;
+    font-variant:small-caps;
+    font-size: 50%;
+    color:red;
+    font-weight:bold;
+    content: 'New';
+}
+
+.padding-medium.flex-item.tm-team-description-container h2 {
+display: flex;
+}
+
+.tm-team-description-container h2.tm-section-title {
+    text-align: left;
+}
+
+.blocks .tm-team-description-container p.tm-section-description:last-child {
+    letter-spacing: 5px;
+    font-style: italic;
+    word-spacing: 10px;
+}
+
+/*boxes.gallery-container:nth-child(2n+1) {
+    background-color: lightskyblue;
+    color: white;
+}*/
+
+li.box.box-work  {
+   padding: 10px;
+}
+
+li.box.box-work:nth-child(2n+1) {
+    background-color: lightskyblue;
+    color: white;
+}
