@@ -44,7 +44,7 @@ text-indent: 20px;
 
 }
 
-div.padding-medium h2{
+.heading.tm-content-box div.padding-medium h2{
     text-align: center;
     color: lightskyblue;
 }
@@ -89,7 +89,30 @@ li.box.box-work  {
    padding: 10px;
 }
 
+li.box.box-work p::first-letter {
+    font-weight:bold;
+}
+
+
+li.box.box-work p{
+   font-style: italic;
+}
+
 li.box.box-work:nth-child(2n+1) {
     background-color: lightskyblue;
     color: white;
 }
+
+.tm-section-description p{
+    /*empty-cells:25px;*/
+}
+
+.form-group[name=contact_message] {
+    background-image: url(img/search-icon.png);
+}
+
+textarea#contact_message {
+    background-color: violet;
+    background-image: url(img/email-icon.png);
+}
+
