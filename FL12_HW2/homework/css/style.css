@@ -80,10 +80,6 @@ display: flex;
     word-spacing: 10px;
 }
 
-/*boxes.gallery-container:nth-child(2n+1) {
-    background-color: lightskyblue;
-    color: white;
-}*/
 
 li.box.box-work  {
    padding: 10px;
@@ -111,8 +107,31 @@ li.box.box-work:nth-child(2n+1) {
     background-image: url(img/search-icon.png);
 }
 
-textarea#contact_message {
-    background-color: violet;
-    background-image: url(img/email-icon.png);
+#contact_message  {
+    background: url("../img/email-icon.png") no-repeat bottom 10px right 10px;
+    background-size: 30px;
+}
+
+.form-group input:focus {
+    background-color: lightskyblue;
+}
+
+.form-group input {
+    border: none;
+    border-bottom: 1px solid lightskyblue;
+}
+
+button[type="submit"] {
+    background: white;
+    color: lightskyblue;
+    border: 1px solid lightskyblue;
+    padding: 20px 30px;
+    display: flex;
+    /*margin-right: 0px;*/
+    margin-left: 86%;
+}
+
+.form-group textarea {
+    border: 1px solid lightskyblue;
 }
 
