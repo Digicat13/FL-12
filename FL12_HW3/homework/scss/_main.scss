@@ -1,1 +1,84 @@
-// Write your styles here
+$btn-color: #699900;
+/*$mark-color: #14A0C7;
+$bgc-color: #fff;
+$card-color: #21232E;*/
+
+body{
+    margin: 0px;
+
+}
+.header {
+    background-position-y: -230px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-bottom-right-radius: 500px 250px;
+    height: 600px;
+
+    .header-wrap {
+        margin-left: 150px;
+        /*padding-top: 100px;*/
+        /*padding-bottom: 70px;*/
+        width: 30%;
+
+        .landing-logo {
+            padding-top: 20px;
+            /*align-items: center;*/
+            img {
+                display: inline-block;
+            }
+
+            p {
+                vertical-align: top;
+                margin: 0px 10px; 
+                /*padding: 10px;*/
+                font-weight: 600;
+                display: inline-block;
+                span {
+                    font-weight: 200;
+                    display: block;
+                    font-size: 7px;
+                    text-align:center;
+                }
+            }
+        }
+
+        .header_heading {
+            font-weight: bold;
+            font-size: 50px;
+        }
+    }
+
+    .header_text {
+        font-size: 10px;
+        font-family: 'Hind', sans-serif;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+    
+
+}
+
+button {
+    color: white;
+    background-color: $btn-color;
+    padding: 7px 30px;
+    border-style: none;
+    border-radius: 3px 3px;
+    font-family: 'Hind', sans-serif;
+    font-weight: 600;
+}
+
+a {
+    /*text-decoration: none;*/
+    color: white;
+    margin-left: 120px;
+}
+
+main {
+    text-align: center;
+
+    .section_text {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+    }
+}
