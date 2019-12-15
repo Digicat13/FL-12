@@ -1,3 +1,5 @@
+$check: ( day: url("./../img/m-h-day.jpg"), night: url("./../img/m-h-night.jpg") );
+
 @mixin a-style {
     font-family: $headings-font;
     color: white;
@@ -19,7 +21,7 @@ body {
 }
 
 .header {
-    background-image: $bcg-img;
+    background-image: map-get($check, $check-value);
     background-position-y: -230px;
     font-family: $text-font;
     border-radius: 0px 0px 600px/200px;
