@@ -1,14 +1,20 @@
-/*$mark-color: #14A0C7;
-$bgc-color: #fff;
-$card-color: #21232E;*/
+/*$mark-color: #14A0C7;*/
+/*$bgc-color: #fff;*/
+/*$btn-color: #E3AC00;
+    body-color: #21232E;
+    $mark-color: #FF4E33;
+    $banner-grad-left: #E3AC00;
+$banner-grad-right: #932D53;*/
 body {
-  margin: 0px; }
+  margin: 0px;
+  background-color: white; }
 
 .header {
   background-position-y: -230px;
-  font-family: 'Source Sans Pro', sans-serif;
-  border-bottom-right-radius: 500px 250px;
-  height: 600px; }
+  font-family: "Source Sans Pro", sans-serif;
+  border-radius: 0px 0px 600px/200px;
+  height: 600px;
+  color: #21232E; }
   .header .header-wrap {
     margin-left: 150px;
     /*padding-top: 100px;*/
@@ -35,9 +41,11 @@ body {
       font-size: 50px; }
   .header .header_text {
     font-size: 10px;
-    font-family: 'Hind', sans-serif;
+    font-family: "Hind", sans-serif;
     text-align: left;
     margin-bottom: 50px; }
+  .header .login {
+    margin-left: 120px; }
 
 button {
   color: white;
@@ -45,20 +53,75 @@ button {
   padding: 7px 30px;
   border-style: none;
   border-radius: 3px 3px;
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
   font-weight: 600; }
 
 a {
-  /*text-decoration: none;*/
-  color: white;
-  margin-left: 120px; }
+  color: white; }
 
 main {
-  text-align: center; }
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  /*background-position-y: 500px;
+  background: $text-color;*/
+  /*background-size: 100px;*/
+  /*align-items: center;*/ }
   main .section_text {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 25px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #21232E; }
+  main .section_card_wrap {
+    width: 60%;
+    margin-left: 20%; }
+  main .section_card {
+    padding: 15px;
+    margin: 10px;
+    background-color: #21232E;
+    border-radius: 5px;
+    display: flex; }
+    main .section_card img {
+      border-radius: 5px;
+      width: 800px;
+      /*height: 200px;*/ }
+  main .section_card_heading {
+    font-size: 18px;
     font-weight: 600; }
+  main .section_card_right_container {
+    /*margin: 100px;*/
+    padding: 40px 0px;
+    /*text-align: center;*/
+    /*width: 300px;*/
+    font-size: 14px;
+    font-weight: 100;
+    /*text-align: center;*/ }
+  main .section_card_text {
+    padding: 30px 70px;
+    text-align: justify; }
+  main .section_banner {
+    position: relative;
+    top: 100px;
+    margin-top: 100px;
+    padding: 10px;
+    background-image: linear-gradient(to right, #699900, #2E5DD3);
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 5px; }
+  main section_banner_text_wrap {
+    /*display: inline-flex;*/
+    /*display: flex;*/ }
+  main .section_banner_heading {
+    font-weight: bold;
+    font-size: 26px;
+    color: #21232E; }
+
+.footer {
+  z-index: -1;
+  position: relative;
+  /*display: inline;*/
+  background-color: #21232E; }
 
 header {
   background-image: url("./../img/m-h-day.jpg");

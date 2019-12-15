@@ -1,18 +1,29 @@
 $btn-color: #699900;
-/*$mark-color: #14A0C7;
-$bgc-color: #fff;
-$card-color: #21232E;*/
+$body-color: white;
+/*$mark-color: #14A0C7;*/
+/*$bgc-color: #fff;*/
+$card-color: #21232E;
+$text-font: 'Source Sans Pro', sans-serif;
+$headings-font: 'Hind', sans-serif;
+$banner-grad-left: #699900;
+$banner-grad-right: #2E5DD3;
+$text-color: #21232E;
 
-body{
+/*$btn-color: #E3AC00;
+    body-color: #21232E;
+    $mark-color: #FF4E33;
+    $banner-grad-left: #E3AC00;
+$banner-grad-right: #932D53;*/
+body {
     margin: 0px;
-
+    background-color: $body-color;
 }
 .header {
     background-position-y: -230px;
-    font-family: 'Source Sans Pro', sans-serif;
-    border-bottom-right-radius: 500px 250px;
+    font-family: $text-font;
+    border-radius: 0px 0px 600px/200px;
     height: 600px;
-
+    color: $text-color;
     .header-wrap {
         margin-left: 150px;
         /*padding-top: 100px;*/
@@ -28,15 +39,16 @@ body{
 
             p {
                 vertical-align: top;
-                margin: 0px 10px; 
+                margin: 0px 10px;
                 /*padding: 10px;*/
                 font-weight: 600;
                 display: inline-block;
+
                 span {
                     font-weight: 200;
                     display: block;
                     font-size: 7px;
-                    text-align:center;
+                    text-align: center;
                 }
             }
         }
@@ -49,12 +61,14 @@ body{
 
     .header_text {
         font-size: 10px;
-        font-family: 'Hind', sans-serif;
+        font-family: $headings-font;
         text-align: left;
         margin-bottom: 50px;
     }
-    
 
+    .login {
+        margin-left: 120px;
+    }
 }
 
 button {
@@ -63,22 +77,96 @@ button {
     padding: 7px 30px;
     border-style: none;
     border-radius: 3px 3px;
-    font-family: 'Hind', sans-serif;
+    font-family: $headings-font;
     font-weight: 600;
 }
 
 a {
-    /*text-decoration: none;*/
     color: white;
-    margin-left: 120px;
 }
 
 main {
+    font-family: $text-font;
+    color: white;
     text-align: center;
-
+    position: relative;
+    /*background-position-y: 500px;
+    background: $text-color;*/
+    /*background-size: 100px;*/
+    /*align-items: center;*/
     .section_text {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 25px;
+        font-family: $text-font;
+        font-size: 28px;
+        font-weight: 600;
+        color: $text-color;
+    }
+
+    .section_card_wrap {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .section_card {
+        padding: 15px;
+        margin: 10px;
+        background-color: $card-color;
+        border-radius: 5px;
+        display: flex;
+
+        img {
+            border-radius: 5px;
+            width: 800px;
+            /*height: 200px;*/
+        }
+    }
+
+    .section_card_heading {
+        font-size: 18px;
         font-weight: 600;
     }
+
+    .section_card_right_container {
+        /*margin: 100px;*/
+        padding: 40px 0px;
+        /*text-align: center;*/
+        /*width: 300px;*/
+        font-size: 14px;
+        font-weight: 100;
+        /*text-align: center;*/
+    }
+
+    .section_card_text {
+        padding: 30px 70px;
+        text-align: justify;
+    }
+
+    .section_banner {
+        position:relative;
+        top: 100px;
+        margin-top: 100px;
+        padding: 10px;
+        background-image: linear-gradient(to right, $banner-grad-left, $banner-grad-right);
+        width: 70%;
+        margin-left: 15%;
+        border-radius: 5px;
+    }
+
+    section_banner_text_wrap {
+        /*display: inline-flex;*/
+        /*display: flex;*/
+    }
+
+    .section_banner_heading {
+        font-weight: bold;
+        font-size: 26px;
+        color: $text-color;
+    }
+}
+
+.footer {
+    z-index: -1;
+    position: relative;
+  
+    /*display: inline;*/
+    background-color: $text-color;
 }
