@@ -1,59 +1,37 @@
-$btn-color: #699900;
-$body-color: white;
-/*$mark-color: #14A0C7;*/
-/*$bgc-color: #fff;*/
-$card-color: #21232E;
-$text-font: 'Source Sans Pro', sans-serif;
-$headings-font: 'Hind', sans-serif;
-$banner-grad-left: #699900;
-$banner-grad-right: #2E5DD3;
-$text-color: #21232E;
+@mixin a-style {
+    font-family: $headings-font;
+    color: white;
+}
 
-/*$btn-color: #E3AC00;
-    body-color: #21232E;
-    $mark-color: #FF4E33;
-    $banner-grad-left: #E3AC00;
-$banner-grad-right: #932D53;*/
+@mixin btn-style {
+    color: white;
+    background-color: $btn-color;
+    padding: 7px 30px;
+    border-style: none;
+    border-radius: 3px 3px;
+    font-family: $headings-font;
+    font-weight: 600;
+}
+
 body {
     margin: 0px;
     background-color: $body-color;
 }
+
 .header {
+    background-image: $bcg-img;
     background-position-y: -230px;
     font-family: $text-font;
     border-radius: 0px 0px 600px/200px;
     height: 600px;
     color: $text-color;
+
     .header-wrap {
         margin-left: 150px;
-        /*padding-top: 100px;*/
-        /*padding-bottom: 70px;*/
         width: 30%;
 
-        .landing-logo {
-            padding-top: 20px;
-            /*align-items: center;*/
-            img {
-                display: inline-block;
-            }
-
-            p {
-                vertical-align: top;
-                margin: 0px 10px;
-                /*padding: 10px;*/
-                font-weight: 600;
-                display: inline-block;
-
-                span {
-                    font-weight: 200;
-                    display: block;
-                    font-size: 7px;
-                    text-align: center;
-                }
-            }
-        }
-
         .header_heading {
+            font-family: $headings-font;
             font-weight: bold;
             font-size: 50px;
         }
@@ -71,18 +49,33 @@ body {
     }
 }
 
+.landing-logo {
+    padding-top: 20px;
+    img {
+        display: inline-block;
+    }
+
+    p {
+        vertical-align: top;
+        margin: 0px 10px;
+        font-weight: 600;
+        display: inline-block;
+
+        span {
+            font-weight: 200;
+            display: block;
+            font-size: 7px;
+            text-align: center;
+        }
+    }
+}
+
 button {
-    color: white;
-    background-color: $btn-color;
-    padding: 7px 30px;
-    border-style: none;
-    border-radius: 3px 3px;
-    font-family: $headings-font;
-    font-weight: 600;
+    @include btn-style;
 }
 
 a {
-    color: white;
+    @include a-style; 
 }
 
 main {
@@ -90,12 +83,9 @@ main {
     color: white;
     text-align: center;
     position: relative;
-    /*background-position-y: 500px;
-    background: $text-color;*/
-    /*background-size: 100px;*/
-    /*align-items: center;*/
+
     .section_text {
-        font-family: $text-font;
+        font-family: $headings-font;
         font-size: 28px;
         font-weight: 600;
         color: $text-color;
@@ -116,23 +106,19 @@ main {
         img {
             border-radius: 5px;
             width: 800px;
-            /*height: 200px;*/
         }
     }
 
     .section_card_heading {
         font-size: 18px;
         font-weight: 600;
+        font-family: $headings-font;
     }
 
     .section_card_right_container {
-        /*margin: 100px;*/
         padding: 40px 0px;
-        /*text-align: center;*/
-        /*width: 300px;*/
         font-size: 14px;
         font-weight: 100;
-        /*text-align: center;*/
     }
 
     .section_card_text {
@@ -141,10 +127,8 @@ main {
     }
 
     .section_banner {
-        /*display: contents;*/
         position: relative;
-        position: center;
-        top: 100px;
+        top: 70px;
         margin-top: 100px;
         padding: 10px;
         background-image: linear-gradient(to right, $banner-grad-left, $banner-grad-right);
@@ -154,10 +138,7 @@ main {
     }
 
     .section_banner_button {
-        /*display: inline-block;*/
         margin-right: 10px;
-        /*position: center;*/
-        /*text-align: right;*/
     }
 
     .section_banner_text_wrap {
@@ -176,13 +157,29 @@ main {
 .footer {
     z-index: -1;
     position: relative;
-    
-    /*display: inline;*/
-    background-color: $text-color;
+    background-color: $card-color;
+    text-align: justify;
+    color: white;
+    font-family: $text-font;
 }
 
 .footer-wrap {
-    /*margin-top: 100px;*/
-    display: flex;
     padding: 100px;
+    text-align: center;
+  
 }
+.footer_logo {
+    margin-left: -240px;
+    display: inline;
+}
+
+.footer_text {
+    font-size: 10px;
+    display: inline;
+}
+
+.footer-cr {
+    font-size: 12px;
+    display: inline;
+}
+

@@ -1,15 +1,9 @@
-/*$mark-color: #14A0C7;*/
-/*$bgc-color: #fff;*/
-/*$btn-color: #E3AC00;
-    body-color: #21232E;
-    $mark-color: #FF4E33;
-    $banner-grad-left: #E3AC00;
-$banner-grad-right: #932D53;*/
 body {
   margin: 0px;
   background-color: white; }
 
 .header {
+  background-image: url("./../img/m-h-day.jpg");
   background-position-y: -230px;
   font-family: "Source Sans Pro", sans-serif;
   border-radius: 0px 0px 600px/200px;
@@ -17,26 +11,9 @@ body {
   color: #21232E; }
   .header .header-wrap {
     margin-left: 150px;
-    /*padding-top: 100px;*/
-    /*padding-bottom: 70px;*/
     width: 30%; }
-    .header .header-wrap .landing-logo {
-      padding-top: 20px;
-      /*align-items: center;*/ }
-      .header .header-wrap .landing-logo img {
-        display: inline-block; }
-      .header .header-wrap .landing-logo p {
-        vertical-align: top;
-        margin: 0px 10px;
-        /*padding: 10px;*/
-        font-weight: 600;
-        display: inline-block; }
-        .header .header-wrap .landing-logo p span {
-          font-weight: 200;
-          display: block;
-          font-size: 7px;
-          text-align: center; }
     .header .header-wrap .header_heading {
+      font-family: "Hind", sans-serif;
       font-weight: bold;
       font-size: 50px; }
   .header .header_text {
@@ -46,6 +23,21 @@ body {
     margin-bottom: 50px; }
   .header .login {
     margin-left: 120px; }
+
+.landing-logo {
+  padding-top: 20px; }
+  .landing-logo img {
+    display: inline-block; }
+  .landing-logo p {
+    vertical-align: top;
+    margin: 0px 10px;
+    font-weight: 600;
+    display: inline-block; }
+    .landing-logo p span {
+      font-weight: 200;
+      display: block;
+      font-size: 7px;
+      text-align: center; }
 
 button {
   color: white;
@@ -57,19 +49,16 @@ button {
   font-weight: 600; }
 
 a {
+  font-family: "Hind", sans-serif;
   color: white; }
 
 main {
   font-family: "Source Sans Pro", sans-serif;
   color: white;
   text-align: center;
-  position: relative;
-  /*background-position-y: 500px;
-  background: $text-color;*/
-  /*background-size: 100px;*/
-  /*align-items: center;*/ }
+  position: relative; }
   main .section_text {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Hind", sans-serif;
     font-size: 28px;
     font-weight: 600;
     color: #21232E; }
@@ -84,27 +73,21 @@ main {
     display: flex; }
     main .section_card img {
       border-radius: 5px;
-      width: 800px;
-      /*height: 200px;*/ }
+      width: 800px; }
   main .section_card_heading {
     font-size: 18px;
-    font-weight: 600; }
+    font-weight: 600;
+    font-family: "Hind", sans-serif; }
   main .section_card_right_container {
-    /*margin: 100px;*/
     padding: 40px 0px;
-    /*text-align: center;*/
-    /*width: 300px;*/
     font-size: 14px;
-    font-weight: 100;
-    /*text-align: center;*/ }
+    font-weight: 100; }
   main .section_card_text {
     padding: 30px 70px;
     text-align: justify; }
   main .section_banner {
-    /*display: contents;*/
     position: relative;
-    position: center;
-    top: 100px;
+    top: 70px;
     margin-top: 100px;
     padding: 10px;
     background-image: linear-gradient(to right, #699900, #2E5DD3);
@@ -112,10 +95,7 @@ main {
     margin-left: 15%;
     border-radius: 5px; }
   main .section_banner_button {
-    /*display: inline-block;*/
-    margin-right: 10px;
-    /*position: center;*/
-    /*text-align: right;*/ }
+    margin-right: 10px; }
   main .section_banner_text_wrap {
     margin-left: -300px;
     text-align: left;
@@ -128,17 +108,23 @@ main {
 .footer {
   z-index: -1;
   position: relative;
-  /*display: inline;*/
-  background-color: #21232E; }
+  background-color: #21232E;
+  text-align: justify;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif; }
 
 .footer-wrap {
-  /*margin-top: 100px;*/
-  display: flex;
-  padding: 100px; }
+  padding: 100px;
+  text-align: center; }
 
-header {
-  background-image: url("./../img/m-h-day.jpg");
-  /*background: cover;*/ }
+.footer_logo {
+  margin-left: -240px;
+  display: inline; }
 
-.header_heading p:nth-child(1n+5) {
-  background-color: darkturquoise; }
+.footer_text {
+  font-size: 10px;
+  display: inline; }
+
+.footer-cr {
+  font-size: 12px;
+  display: inline; }

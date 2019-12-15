@@ -1,42 +1,19 @@
-/*$mark-color: #14A0C7;*/
-/*$bgc-color: #fff;*/
-/*$btn-color: #E3AC00;
-    body-color: #21232E;
-    $mark-color: #FF4E33;
-    $banner-grad-left: #E3AC00;
-$banner-grad-right: #932D53;*/
 body {
   margin: 0px;
-  background-color: white; }
+  background-color: #21232E; }
 
 .header {
+  background-image: url("./../img/m-h-night.jpg");
   background-position-y: -230px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Fresca", sans-serif;
   border-radius: 0px 0px 600px/200px;
   height: 600px;
-  color: #21232E; }
+  color: white; }
   .header .header-wrap {
     margin-left: 150px;
-    /*padding-top: 100px;*/
-    /*padding-bottom: 70px;*/
     width: 30%; }
-    .header .header-wrap .landing-logo {
-      padding-top: 20px;
-      /*align-items: center;*/ }
-      .header .header-wrap .landing-logo img {
-        display: inline-block; }
-      .header .header-wrap .landing-logo p {
-        vertical-align: top;
-        margin: 0px 10px;
-        /*padding: 10px;*/
-        font-weight: 600;
-        display: inline-block; }
-        .header .header-wrap .landing-logo p span {
-          font-weight: 200;
-          display: block;
-          font-size: 7px;
-          text-align: center; }
     .header .header-wrap .header_heading {
+      font-family: "Hind", sans-serif;
       font-weight: bold;
       font-size: 50px; }
   .header .header_text {
@@ -47,9 +24,24 @@ body {
   .header .login {
     margin-left: 120px; }
 
+.landing-logo {
+  padding-top: 20px; }
+  .landing-logo img {
+    display: inline-block; }
+  .landing-logo p {
+    vertical-align: top;
+    margin: 0px 10px;
+    font-weight: 600;
+    display: inline-block; }
+    .landing-logo p span {
+      font-weight: 200;
+      display: block;
+      font-size: 7px;
+      text-align: center; }
+
 button {
   color: white;
-  background-color: #699900;
+  background-color: #E3AC00;
   padding: 7px 30px;
   border-style: none;
   border-radius: 3px 3px;
@@ -57,65 +49,53 @@ button {
   font-weight: 600; }
 
 a {
+  font-family: "Hind", sans-serif;
   color: white; }
 
 main {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Fresca", sans-serif;
   color: white;
   text-align: center;
-  position: relative;
-  /*background-position-y: 500px;
-  background: $text-color;*/
-  /*background-size: 100px;*/
-  /*align-items: center;*/ }
+  position: relative; }
   main .section_text {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Hind", sans-serif;
     font-size: 28px;
     font-weight: 600;
-    color: #21232E; }
+    color: white; }
   main .section_card_wrap {
     width: 60%;
     margin-left: 20%; }
   main .section_card {
     padding: 15px;
     margin: 10px;
-    background-color: #21232E;
+    background-color: #3B3F50;
     border-radius: 5px;
     display: flex; }
     main .section_card img {
       border-radius: 5px;
-      width: 800px;
-      /*height: 200px;*/ }
+      width: 800px; }
   main .section_card_heading {
     font-size: 18px;
-    font-weight: 600; }
+    font-weight: 600;
+    font-family: "Hind", sans-serif; }
   main .section_card_right_container {
-    /*margin: 100px;*/
     padding: 40px 0px;
-    /*text-align: center;*/
-    /*width: 300px;*/
     font-size: 14px;
-    font-weight: 100;
-    /*text-align: center;*/ }
+    font-weight: 100; }
   main .section_card_text {
     padding: 30px 70px;
     text-align: justify; }
   main .section_banner {
-    /*display: contents;*/
     position: relative;
-    position: center;
-    top: 100px;
+    top: 70px;
     margin-top: 100px;
     padding: 10px;
-    background-image: linear-gradient(to right, #699900, #2E5DD3);
+    background-image: linear-gradient(to right, #E3AC00, #932D53);
     width: 70%;
     margin-left: 15%;
     border-radius: 5px; }
   main .section_banner_button {
-    /*display: inline-block;*/
-    margin-right: 10px;
-    /*position: center;*/
-    /*text-align: right;*/ }
+    margin-right: 10px; }
   main .section_banner_text_wrap {
     margin-left: -300px;
     text-align: left;
@@ -123,15 +103,28 @@ main {
   main .section_banner_heading {
     font-weight: bold;
     font-size: 26px;
-    color: #21232E; }
+    color: white; }
 
 .footer {
   z-index: -1;
   position: relative;
-  /*display: inline;*/
-  background-color: #21232E; }
+  background-color: #3B3F50;
+  text-align: justify;
+  color: white;
+  font-family: "Fresca", sans-serif; }
 
 .footer-wrap {
-  /*margin-top: 100px;*/
-  display: flex;
-  padding: 100px; }
+  padding: 100px;
+  text-align: center; }
+
+.footer_logo {
+  margin-left: -240px;
+  display: inline; }
+
+.footer_text {
+  font-size: 10px;
+  display: inline; }
+
+.footer-cr {
+  font-size: 12px;
+  display: inline; }
