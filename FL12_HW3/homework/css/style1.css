@@ -101,7 +101,9 @@ main {
     padding: 30px 70px;
     text-align: justify; }
   main .section_banner {
+    /*display: contents;*/
     position: relative;
+    position: center;
     top: 100px;
     margin-top: 100px;
     padding: 10px;
@@ -109,9 +111,15 @@ main {
     width: 70%;
     margin-left: 15%;
     border-radius: 5px; }
-  main section_banner_text_wrap {
-    /*display: inline-flex;*/
-    /*display: flex;*/ }
+  main .section_banner_button {
+    /*display: inline-block;*/
+    margin-right: 10px;
+    /*position: center;*/
+    /*text-align: right;*/ }
+  main .section_banner_text_wrap {
+    margin-left: -300px;
+    text-align: left;
+    display: inline-block; }
   main .section_banner_heading {
     font-weight: bold;
     font-size: 26px;
@@ -122,6 +130,11 @@ main {
   position: relative;
   /*display: inline;*/
   background-color: #21232E; }
+
+.footer-wrap {
+  /*margin-top: 100px;*/
+  display: flex;
+  padding: 100px; }
 
 header {
   background-image: url("./../img/m-h-day.jpg");
