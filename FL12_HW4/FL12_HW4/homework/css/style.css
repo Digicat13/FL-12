@@ -82,7 +82,17 @@ main {
   font-weight: 400; }
 
 footer {
-  /*height: 100px;*/
-  background-color: black; }
+  background-color: black;
+  display: flex;
+  justify-content: center; }
+  footer .footer-content {
+    padding: 30px;
+    color: grey;
+    font-size: 12px; }
+    footer .footer-content h2 {
+      font-size: 18px;
+      color: white; }
+    footer .footer-content div {
+      display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */
