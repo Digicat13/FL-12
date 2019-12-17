@@ -7,14 +7,10 @@ header {
     height: 95vh;
     background-image: url("./../img/home-bg.jpg");
     background-size: cover;
-    /*background: no-repeat;*/
-    /*background-repeat: no-repeat;*/
     width: 100%;
     display: flex;
-    /*vertical-align: middle;*/
     align-items: center;
-    justify-content: center;
-    text-align: justify; }
+    justify-content: center; }
     header .img-block h2 {
       font-size: 25px;
       text-align: justify; }
@@ -22,8 +18,6 @@ header {
       color: yellow;
       font-size: 10px;
       text-align: justify; }
-  header .header-img {
-    text-align: justify; }
 
 button {
   border-radius: 20px;
@@ -73,7 +67,6 @@ main {
     font-weight: bold; }
 
 .blog-info {
-  /*margin: 10px 30px;*/
   text-align: left;
   font-size: 12px; }
   .blog-info img {
@@ -87,5 +80,9 @@ main {
   color: grey;
   font-size: 14px;
   font-weight: 400; }
+
+footer {
+  /*height: 100px;*/
+  background-color: black; }
 
 /*# sourceMappingURL=style.css.map */
